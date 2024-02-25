@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: goldenrod;
+    color: white;
+}
+
+:root {
+      --main-color: goldenrod;
+      --background: #f4f4f4;
+      --secend-color: #e4d0be;
+      --white-color: #fff;
+      --black-color: #000;
+      --text-color: #707070;
+      --fotter-color: #fff;
+      --p-color: #3e3d3d;
+    
+      /* ====== Transition ====== */
+      --tran-03: all 0.2s ease;
+      --tran-03: all 0.3s ease;
+      --tran-04: all 0.3s ease;
+      --tran-05: all 0.3s ease;
+    }
+    
+    .favorite-icon {
+      color: gray;
+      cursor: pointer;
+      font-size: 2rem;
+      position: absolute;
+      right: 0;
+      bottom: 105px;
+    }
+    
+    .favorite-icon.active {
+      color: red;
+    }
+
+body {
+    background-color:var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 5%;
+    color:black;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    
+}
+
+.navigation h1 {
+    font-size: 40px;
+}
+.navigation ul a,
+h1 a,
+.navigation a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 1s;
+}
+
+/* .navigation ul a:hover,
+.navigation .first-nav {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+ } */
+.all a {
+    display: block;
+    font-size: 13px;
+    opacity: .5;
+    transition: .4s !important;
+}
+.all a:hover{
+    transform: scale(1.1);
+}
+
+.all .first-nav {
+    color: var(--main-color);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.navigation h1::first-letter {
+    font-size: 50px;
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+.navigation .add {
+    display: flex;
+    align-items: center;
+}
+
+.navigation i {
+    color: var(--main-color);
+}
+
+.navigation .sign {
+    background-color: var(--main-color);
+    padding: 7px 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: .6s ease;
+}
+
+.navigation .sign:hover {
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.text{
+  text-align: center;
+  margin: 20px;
+  
+}
+
+
+.text h4 {
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+.text h3 {
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1180px;
+  padding: 15px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  gap: 35px;
+  
+}
+
+.Product {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Product .p-name {
+  color: var(--main-color);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.Product .p-price {
+  color: var(--text-color);
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.Product img {
+  width: 230px;
+  height: 220px;
+  object-fit: contain;
+  object-position: center;
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+
+.Product:hover img {
+  opacity: 0.5;
+}
+
+.Product .buy-btn {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.Product .buy-btn:hover {
+  color: var(--black-color);
+  border: 1px solid var(--main-color);
+  background-color: var(--background);
+}
+
+.Product:hover .buy-btn {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color:var(--fotter-color);
+  padding-top: 70px;
+}
+.content{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px ;
+}
+.content ul{
+  list-style: none;
+}
+.quick-links ul{
+  text-align: center;
+}
+.Follow-us .social li i{
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 18px;
+
+}
+.content ul li{
+  padding: 8px;
+}
+.content a,.content li{
+  color:#c8c8c8;
+  text-decoration: none;
+  font-size: 18px;
+}
+.content h3{
+  font-size: 22px;
+  margin-bottom: 25px; 
+  padding-bottom: 10px;
+  border-bottom: #d4a056;
+}
+.copyright{
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+}
