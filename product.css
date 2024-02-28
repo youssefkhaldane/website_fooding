@@ -165,7 +165,17 @@ h1 a,
   margin-bottom: 20px;
   position: relative;
 }
-
+.icons{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: rgb(84, 84, 84);
+}
+.red-heart{
+  color: red;
+}
 .Product .p-name {
   color: var(--main-color);
   letter-spacing: 1px;

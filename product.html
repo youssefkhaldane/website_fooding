@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="product.css">
-    <script defer src=".js"></script>
     <title>Food</title>
 </head>
 <body>
@@ -42,7 +41,7 @@
     <div class="container">
       <div class="Product  Product1">
         <img class=" Product-Img p1" src="./images/couscos.png" />
-        <span class="favorite-icon" onclick="toggleFavorite(this)">&#9733;</span>
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(0)"></i>
         <h3 class="p-name">COUSCOUS</h3>
         <h4 class="p-price">11.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -50,6 +49,7 @@
 
       <div class="Product  Product2">
         <img  class="Product-Img p2" src="./images/maroc-rfisa.jpeg" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(1)"></i>
         <h3 class="p-name">RFISSA</h3>
         <h4 class="p-price">15.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -57,6 +57,7 @@
 
       <div class="Product  Product3">
         <img  class="Product-Img p3" src="./images/kefta-tagine-moroccan.jpg" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(2)"></i>
         <h3 class="p-name">KEFTA WITH EGGS</h3>
         <h4 class="p-price">5.00$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -64,6 +65,7 @@
 
       <div class="Product  Product4">
         <img  class="Product-Img p4" src="./images/poisson.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(3)"></i>
         <h3 class="p-name">CRILLED FISH</h3>
         <h4 class="p-price">4.49$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -71,6 +73,7 @@
 
       <div class="Product  Product5">
         <img  class="Product-Img p5" src="./images/tajin_lug.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(4)"></i>
         <h3 class="p-name">CHICKEN TAGINE</h3>
         <h4 class="p-price">7.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -78,6 +81,7 @@
 
       <div class="Product  Product6">
         <img  class="Product-Img p6" src="./images/salad_riz.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(5)"></i>
         <h3 class="p-name">RICE SALAD</h3>
         <h4 class="p-price">3.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -85,6 +89,7 @@
 
       <div class="Product  Product7">
         <img  class=" Product-Img p7" src="./images/poulet.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(6)"></i>
         <h3 class="p-name">ROASTED CHICKEN</h3>
         <h4 class="p-price">12.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -92,6 +97,7 @@
 
       <div class="Product  Product8">
         <img  class=" Product-Img p8" src="./images/spaghitte.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(7)"></i>
         <h3 class="p-name">SPAGHETTI</h3>
         <h4 class="p-price">9.45$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -108,6 +114,7 @@
     <div class="container">
       <div class="Product  Product1">
         <img  class=" Product-Img p1" src="./images/mo3amar.png" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(8)"></i>
         <h3 class="p-name">BOREK</h3>
         <h4 class="p-price">10.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -115,6 +122,7 @@
 
       <div class="Product  Product2">
         <img  class="Product-Img p2" src="./images/food_torkey.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(9)"></i>
         <h3 class="p-name">MEAT WITH FRITES</h3>
         <h4 class="p-price">12.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -122,6 +130,7 @@
 
       <div class="Product  Product3">
         <img  class="Product-Img p3" src="./images/raghifa.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(10)"></i>
         <h3 class="p-name">TURKISH TACOS</h3>
         <h4 class="p-price">6.50$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -129,6 +138,7 @@
 
       <div class="Product  Product4">
         <img  class="Product-Img p4" src="./images/raisa-f.jpeg" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(11)"></i>
         <h3 class="p-name">SARMA</h3>
         <h4 class="p-price">5.49$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -136,6 +146,7 @@
 
       <div class="Product  Product5">
         <img  class="Product-Img p5" src="./images/kabab.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(12)"></i>
         <h3 class="p-name">Turkish KEBAB</h3>
         <h4 class="p-price">13.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -143,6 +154,7 @@
 
       <div class="Product  Product6">
         <img  class="Product-Img p6" src="./images/chawarma.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(13)"></i>
         <h3 class="p-name">CHAWARMA</h3>
         <h4 class="p-price">11.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -150,6 +162,7 @@
 
       <div class="Product  Product7">
         <img  class=" Product-Img p7" src="./images/kafta-kabab.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(14)"></i>
         <h3 class="p-name">KEFTA KABAB</h3>
         <h4 class="p-price">9.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -157,6 +170,7 @@
 
       <div class="Product  Product8">
         <img  class=" Product-Img p8" src="./images/kisspng-turkish-cuisine-pide-doner-kebab-lahmajoun-pizza-5aee1303f1ded1.6198511515255518759907.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(15)"></i>
         <h3 class="p-name">KARADENIZ TURTASI</h3>
         <h4 class="p-price">10.35$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -172,6 +186,7 @@
     <div class="container">
       <div class="Product  Product1">
         <img  class=" Product-Img p1" src="./images/food-1.png" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(16)"></i>
         <h3 class="p-name">SUSCHI</h3>
         <h4 class="p-price">16.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -179,6 +194,7 @@
 
       <div class="Product  Product2">
         <img  class="Product-Img p2" src="./images/food-2.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(17)"></i>
         <h3 class="p-name">TAKOYAKI</h3>
         <h4 class="p-price">6.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -186,6 +202,7 @@
 
       <div class="Product  Product3">
         <img  class="Product-Img p3" src="./images/food-3.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(18)"></i>
         <h3 class="p-name">MATcha</h3>
         <h4 class="p-price">7.00$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -193,6 +210,7 @@
 
       <div class="Product  Product4">
         <img  class="Product-Img p4" src="./images/food-4.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(19)"></i>
         <h3 class="p-name">RAMEN</h3>
         <h4 class="p-price">8.49$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -200,6 +218,7 @@
 
       <div class="Product  Product5">
         <img  class="Product-Img p5" src="./images/food-5.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(20)"></i>
         <h3 class="p-name">NABE-YAKI</h3>
         <h4 class="p-price">5.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -207,6 +226,7 @@
 
       <div class="Product  Product6">
         <img  class="Product-Img p6" src="./images/food-6.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(21)"></i>
         <h3 class="p-name">SATSUMA-AGE</h3>
         <h4 class="p-price">6.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -214,6 +234,7 @@
 
       <div class="Product  Product7">
         <img  class=" Product-Img p7" src="./images/food-7.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(22)"></i>
         <h3 class="p-name">TEMPURE</h3>
         <h4 class="p-price">7.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -221,6 +242,7 @@
 
       <div class="Product  Product8">
         <img  class=" Product-Img p8" src="./images/food-8.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(23)"></i>
         <h3 class="p-name">YAKITORI</h3>
         <h4 class="p-price">6.45$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -237,6 +259,7 @@
     <div class="container">
       <div class="Product  Product1">
         <img  class=" Product-Img p1" src="./images/word-1.png" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(24)"></i>
         <h3 class="p-name">TAGLIATEL</h3>
         <h4 class="p-price">8.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -244,6 +267,7 @@
 
       <div class="Product  Product2">
         <img  class="Product-Img p2" src="./images/word-2.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(25)"></i>
         <h3 class="p-name">PENNE</h3>
         <h4 class="p-price">9.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -251,6 +275,7 @@
 
       <div class="Product  Product3">
         <img  class="Product-Img p3" src="./images/word-3.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(26)"></i>
         <h3 class="p-name">PIZZA
         </h3>
         <h4 class="p-price">6.00$</h4>
@@ -259,6 +284,7 @@
 
       <div class="Product  Product4">
         <img  class="Product-Img p4" src="./images/word-4.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(27)"></i>
         <h3 class="p-name">LAZANYA</h3>
         <h4 class="p-price">4.49$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -266,6 +292,7 @@
 
       <div class="Product  Product5">
         <img  class="Product-Img p5" src="./images/word-5.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(28)"></i>
         <h3 class="p-name">MEAT WITH LARGE FRIES</h3>
         <h4 class="p-price">5.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -273,6 +300,7 @@
 
       <div class="Product  Product6">
         <img  class="Product-Img p6" src="./images/word-6.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(29)"></i>
         <h3 class="p-name">NUGGETS</h3>
         <h4 class="p-price">6.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -280,6 +308,7 @@
 
       <div class="Product  Product7">
         <img  class=" Product-Img p7" src="./images/word-7.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(30)"></i>
         <h3 class="p-name">FRIED EGGS</h3>
         <h4 class="p-price">4.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -287,6 +316,7 @@
 
       <div class="Product  Product8">
         <img  class=" Product-Img p8" src="./images/word-8.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(31)"></i>
         <h3 class="p-name">SLICE MEAT</h3>
         <h4 class="p-price">4.45$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -301,6 +331,7 @@
     <div class="container">
       <div class="Product  Product1">
         <img  class=" Product-Img p1" src="./images/ice-cream-1.png" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(32)"></i>
         <h3 class="p-name">ICE CREAM SUNDAE</h3>
         <h4 class="p-price">6.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -308,6 +339,7 @@
 
       <div class="Product  Product2">
         <img  class="Product-Img p2" src="./images/ice-cream-2.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(33)"></i>
         <h3 class="p-name">ICE CREAM CONE</h3>
         <h4 class="p-price">6.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -315,6 +347,7 @@
 
       <div class="Product  Product3">
         <img  class="Product-Img p3" src="./images/ice-cream-3.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(34)"></i>
         <h3 class="p-name">ZA3ZA3</h3>
         <h4 class="p-price">6.00$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -322,6 +355,7 @@
 
       <div class="Product  Product4">
         <img  class="Product-Img p4" src="./images/ice-cream-4.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(35)"></i>
         <h3 class="p-name">ICE CREAM </h3>
         <h4 class="p-price">4.49$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -329,6 +363,7 @@
 
       <div class="Product  Product5">
         <img  class="Product-Img p5" src="./images/boisson-1.png" id="buy-btn" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(36)"></i>
         <h3 class="p-name">MOJITO</h3>
         <h4 class="p-price">5.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -336,6 +371,7 @@
 
       <div class="Product  Product6">
         <img  class="Product-Img p6" src="./images/boisson-2.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(37)"></i>
         <h3 class="p-name">SOFT DRINKS</h3>
         <h4 class="p-price">6.5$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -343,6 +379,7 @@
 
       <div class="Product  Product7">
         <img  class=" Product-Img p7" src="./images/boisson-3.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(38)"></i>
         <h3 class="p-name">RED FRUITS JUICE</h3>
         <h4 class="p-price">4.05$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -350,6 +387,7 @@
 
       <div class="Product  Product8">
         <img  class=" Product-Img p8" src="./images/boisson-4.png" alt="" />
+        <i class="icons fa-regular fa-heart"  onclick="handleFavori(39)"></i>
         <h3 class="p-name">ORANGE JUICE</h3>
         <h4 class="p-price">4.45$</h4>
         <button class="buy-btn">Add To Cart</button>
@@ -405,5 +443,6 @@
   <div class="copyright">
       <p>© 2023 All rights reserved by youssef  </p>
     </div>
+    <script  src="./product.js"></script>
     </body>
     </html>
